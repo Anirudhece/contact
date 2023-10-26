@@ -1,0 +1,19 @@
+{
+  "name": "backend-first",
+  "version": "1.0.0",
+  "description": "practice project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anirudhece/contact.git"
+  },
+  "author": "anirudh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anirudhece/contact/issues"
+  },
+  "homepage": "https://github.com/Anirudhece/contact#readme"
+}
