@@ -3,7 +3,7 @@ const app = express();
 const router = express.Router();
 
 router.route('/').get((req, res) => {
-    res.json({ 'message': 'get all request' })
+    res.json({ 'message': 'get all rotes' })
 })
 
 
