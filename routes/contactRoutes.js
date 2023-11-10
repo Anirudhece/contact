@@ -1,19 +1,21 @@
 const express = require('express');
-const app = express();
 const router = express.Router();
+
 router.route('/').get((req, res) => {
-    res.json({ 'message': 'get all routes' })
+    console.log('Request received at /api/contacts');
+    res.status(200).json({ 'message': 'get all routes' });
 });
 router.route('/').post((req, res) => {
     res.json({ 'message': 'add all routes' })
 });
 router.route('/:id').get((req, res) => {
-    res.json({ 'message': `get info from: ${req.params.id}`})
+    res.json({ 'message': `get contact for: ${req.params.id}` })
 });
 router.route('/:id').put((req, res) => {
-    res.json({ 'message': `get info from: ${req.params.id}` })
+    res.json({ 'message': `update info of: ${req.params.id}` })
 });
 router.route('/:id').delete((req, res) => {
-    res.json({ 'message': `delete info from: ${req.params.id}` })
+    res.json({ 'message': `delete info of: ${req.params.id}` })
 });
+
 module.exports = router;
