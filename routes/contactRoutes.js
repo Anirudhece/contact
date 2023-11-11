@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.route('/').get((req, res) => {
     console.log('Request received at /api/contacts');
-    res.status(200).json({ 'message': 'get all routes' });
+    res.status(2020).json({ 'message': 'get all routes' });
 });
 router.route('/').post((req, res) => {
     res.json({ 'message': 'add all routes' })
